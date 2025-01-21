@@ -9,8 +9,7 @@ function exibirTextoNaTela(tag, texto) {
     responsiveVoice.speak(texto, 'Brazilian Portuguese Male', {rate:1});
 }
 
-function exibirMensagemInicial() {
-    numLimite = numLimite;
+function exibirMensagemInicial(numLimite) {
     exibirTextoNaTela('h1', 'Jogo do número secreto');
     exibirTextoNaTela('p', `Escolha um número entre 1 e ${numLimite}`);
 }
