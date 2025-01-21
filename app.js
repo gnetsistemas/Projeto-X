@@ -10,9 +10,8 @@ function exibirTextoNaTela(tag, texto) {
 }
 
 function exibirMensagemInicial() {
-    numLimite;
     exibirTextoNaTela('h1', 'Jogo do número secreto');
-    exibirTextoNaTela('p', `Escolha um número entre 1 e ${numLimite}`);
+    exibirTextoNaTela('p', `Escolha um número entre 1 e 50`);
 }
 
 exibirMensagemInicial();
@@ -60,7 +59,6 @@ function limparCampo() {
 
 function reiniciarJogo() {
     numeroSecreto = gerarNumeroAleatorio();
-    numLimite;
     limparCampo();
     tentativas = 1;
     exibirMensagemInicial();
