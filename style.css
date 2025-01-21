@@ -44,7 +44,7 @@ body::before {
 .container__conteudo {
     display: flex;
     align-items: center;
-    position: absolute;
+    position: relative;
     bottom: 0;
 }
 
